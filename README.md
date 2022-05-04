@@ -1,13 +1,12 @@
-# Abstractive Text Summarization 
-For Psycological Session Notes
+# *Abstractive Text Summarization* for psychological session notes
 
 ## Task
-The task was to generate a summary of given text in the form of key message bullet points. Allow the user to select how many bullet points to display (at least from 3 to 7 bullet points) and adjust the length of them.
+The task was to generate a summary of the given text in the form of key message bullet points. Allow the user to select how many bullets points to display (at least 3 to 7 bullet points) and adjust the length of them.
 
 ## Text Ranking and Paraphrasing Approach Details
  1) Preprocess text: remove stop words, words-parasites, numbers, punctuation, and symbols
  2) Build Vector Representations of sentences with SentenceTransformer `Distiluse-base-multilingual-cased`
- 3) Build similarity matrix (using cosine similarity) and rank sentences by their importance in the context 
+ 3) Build a similarity matrix (using cosine similarity) and rank sentences by their importance in the context 
  4) Use Paraphrasing Transformer Models to make sentences more readable for the end-user:
  `rugpt3large_based_on_gpt2` and `RUT5-base-paraphraser`. Choose the last one, because it shows the best performance
  5) Visualise and compare results with human-made summaries, which could be found here:  ([nbviewer](https://raw.githubusercontent.com/Teasotea/textSummarization/main/data/evaluation_summary_all.txt)) with ROUGE metric
@@ -37,17 +36,14 @@ Returns: Pandas DataFrame
 ```
 
 ## Transformers Summarizer and Text Ranking Approach Details
- 1) Launch pretrained Transformer Summarizing models, compare their perfomence:
+ 1) Launch pre-trained Transformer Summarizing models, compare their performance:
    * Bert2bert Model `rubert-base-cased`
-   * T5 pretrained on Telegram dataset `rut5-base`
-   * T5 pretrained on Gazeta.ru dataset `rut5-base`
- T5 pretrained on Telegram dataset model shows the best result.
+   * T5 pre-trained on Telegram dataset `rut5-base`
+   * T5 pre-trained on Gazeta.ru dataset `rut5-base`
+ T5 pre-trained on the Telegram dataset model shows the best result.
  2) Build Vector Representations of sentences with SentenceTransformer `Distiluse-base-multilingual-cased`
- 3) Build similarity matrix (using cosine similarity) and rank sentences by their importance in the context 
+ 3) Build a similarity matrix (using cosine similarity) and rank sentences by their importance in the context 
  4)  Analyze and compare results with human-made summaries, which could be found here:  ([nbviewer](https://raw.githubusercontent.com/Teasotea/textSummarization/main/data/evaluation_summary_all.txt)) with ROUGE metric
-
-### Results:
-
 
 ### How to use:
 
@@ -55,7 +51,7 @@ Returns: Pandas DataFrame
 summarize_text(text, num_bull_points=5, is_dialog = False)
 ```
 
-The function summarizes key points from sentences with T5 Model, then builds vector representations of sentences, ranks them and chooses the top results.
+The function summarizes key points from sentences with T5 Model, then builds vector representations of sentences, ranks them, and chooses the top results.
 The user can choose the number of final bullet points.
 
 ```
