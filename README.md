@@ -11,11 +11,6 @@ The task was to generate a summary of the given text in the form of key message 
  `rugpt3large_based_on_gpt2` and `RUT5-base-paraphraser`. Choose the last one, because it shows the best performance
  5) Visualise and compare results with human-made summaries, which could be found here:  ([nbviewer](https://raw.githubusercontent.com/Teasotea/textSummarization/main/data/evaluation_summary_all.txt)) with ROUGE metric
 
-### Results:
-
-![](https://github.com/Teasotea/textSummarization/blob/main/img/results.png?raw=true)
-![](https://github.com/Teasotea/textSummarization/blob/main/img/res.png?raw=true)
-
 ### How to use:
 
 ```
@@ -34,6 +29,10 @@ Parameters:
 
 Returns: Pandas DataFrame
 ```
+### Results:
+
+![](https://github.com/Teasotea/textSummarization/blob/main/img/results.png?raw=true)
+![](https://github.com/Teasotea/textSummarization/blob/main/img/res.png?raw=true)
 
 ## Transformers Summarizer and Text Ranking Approach Details
  1) Launch pre-trained Transformer Summarizing models, compare their performance:
