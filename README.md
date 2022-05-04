@@ -1,4 +1,5 @@
-# Abstractive Text Summarization for Psycological Session Notes
+# Abstractive Text Summarization 
+*for psycological session notes*
 
 ## Task
 The task was to generate a summary of given text in the form of key message bullet points. Allow the user to select how many bullet points to display (at least from 3 to 7 bullet points) and adjust the length of them.
