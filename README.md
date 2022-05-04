@@ -67,16 +67,14 @@ Returns: list of tuples
 ```
 
 
-## Notebooks
+### Notebooks
 - [`SentRanking.ipynb`](https://github.com/Teasotea/textSummarization/blob/main/SentRanking.ipynb) ([nbviewer](https://github.com/Teasotea/textSummarization/blob/main/SentRanking.ipynb)) - Notebook with Text Ranking and Paraphrasing Approach 
 - [`Transformers.ipynb`](https://github.com/Teasotea/textSummarization/blob/main/Transformers.ipynb) ([nbviewer](https://github.com/Teasotea/textSummarization/blob/main/Transformers.ipynb)) - Notebook with Transformers Summarizer and Text Ranking Approach
 
 
-### More ideas for approach improvements
+### Some ideas for approach improvements
 
-*   Explore dataset (EDA): do linguistical and statistical analysis, for example word frequency calculation, normalization, consider priority of words in language. Fine research on that topic is in this [article](https://www.ijert.org/research/text-summarizer-using-abstractive-and-extractive-method-IJERTV3IS050821.pdf )
+*   Explore dataset (EDA): do linguistical and statistical analysis, for example, word frequency calculation, normalization, considering the priority of words in a language. Fine research on that topic is in this [article](https://www.ijert.org/research/text-summarizer-using-abstractive-and-extractive-method-IJERTV3IS050821.pdf )
 *   Develop text summarization solution using RNNs and LSTM (the core idea explained [here](https://www.analyticsvidhya.com/blog/2019/06/comprehensive-guide-text-summarization-using-deep-learning-python/ )) and compare the results
-*   Improve Text Preprocessing: do plural resolution, abbreviation resolution, synonimum resolution and remove personal information, like: names, cities and so on with the help of NER model
-*   Fine-Tune Transformers on custom dataset, which consists of psycological sessions recordings
-
-
+*   Improve Text Preprocessing: do the plural resolution, abbreviation resolution, synonym resolution, and remove personal information, like names, cities, and so on with the help of the NER model
+*   Fine-Tune Transformers on the custom dataset, which consists of psychological sessions recordings
