@@ -1,9 +1,7 @@
 # Abstractive Text Summarization for psycological session notes
 
 ## Task
-Task description could be found by this link:  https://docs.google.com/document/d/1EJoQGeQlWhItjB2LvoT2vyshddR36QMqUQBYcBfnniM/edit <br />
-<br />
-The task was to summarize given text into 3-7 bullet points. Allow the user to choose ampount of bullet points and lenght of them.
+The task was to generate a summary of given text in the form of key message bullet points. Allow the user to select how many bullet points to display (at least from 3 to 7 bullet points) and adjust the length of bullet points
 
 ## Solution Details (main solution)
  1) Preprocess text: remove stop words, words-parasites, numbers, punctuation and symbols
