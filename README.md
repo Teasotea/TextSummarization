@@ -3,7 +3,7 @@
 ## Task
 The task was to generate a summary of given text in the form of key message bullet points. Allow the user to select how many bullet points to display (at least from 3 to 7 bullet points) and adjust the length of them.
 
-## Solution Details (main solution)
+## Main Approach Details
  1) Preprocess text: remove stop words, words-parasites, numbers, punctuation and symbols
  2) Perform Vector Representation of Sentences with SentenceTransformer `Distiluse-base-multilingual-cased`
  3) Build similarity matrix and rank sentences by their importance to context
@@ -11,13 +11,13 @@ The task was to generate a summary of given text in the form of key message bull
  `rugpt3large_based_on_gpt2` and `RUT5-base-paraphraser`. Choose the last one, thus it shows the best perfomance
  6) Visualise and compare results with human-made summaries, that could be found here:  ([nbviewer](https://raw.githubusercontent.com/Teasotea/textSummarization/main/data/evaluation_summary_all.txt)) with ROUGE metric
 
-## Additional approach
-I also have tried ready-to-use solutions with pretrained transformers:
+## Additional Approach Details
+Ready-to-use solutions with pretrained transformers:
    * Bert2bert Model `rubert-base-cased`
    * T5 pretrained on Telegram dataset `rut5-base`
    * T5 pretrained on Gazeta.ru dataset `rut5-base`
-T5 pretrained on Telegram dataset model has shown the best results, 
-which could be further ranked using the steps descibed above and get ready to use
+T5 pretrained on Telegram dataset model has shown the best results. Hence, it 
+could be further ranked using the steps descibed above and get ready to use by selecting most-ranked sentences
 
 ## Results
 
