@@ -39,6 +39,7 @@ Returns: Pandas DataFrame
    * Bert2bert Model `rubert-base-cased`
    * T5 pre-trained on Telegram dataset `rut5-base`
    * T5 pre-trained on Gazeta.ru dataset `rut5-base` <br />
+ <br />
  T5 pre-trained on the Telegram dataset model shows the best result.
  2) Build Vector Representations of sentences with SentenceTransformer `Distiluse-base-multilingual-cased`
  3) Build a similarity matrix (using cosine similarity) and rank sentences by their importance in the context 
