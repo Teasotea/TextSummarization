@@ -38,9 +38,9 @@ Returns: Pandas DataFrame
  1) Launch pre-trained Transformer Summarizing models, compare their performance:
    * Bert2bert Model `rubert-base-cased`
    * T5 pre-trained on Telegram dataset `rut5-base`
-   * T5 pre-trained on Gazeta.ru dataset `rut5-base` <br />
- <br />
+   * T5 pre-trained on Gazeta.ru dataset `rut5-base` <br /> <br />
  T5 pre-trained on the Telegram dataset model shows the best result.
+ 
  2) Build Vector Representations of sentences with SentenceTransformer `Distiluse-base-multilingual-cased`
  3) Build a similarity matrix (using cosine similarity) and rank sentences by their importance in the context 
  4)  Analyze and compare results with human-made summaries, which could be found here:  ([nbviewer](https://raw.githubusercontent.com/Teasotea/textSummarization/main/data/evaluation_summary_all.txt)) with ROUGE metric
